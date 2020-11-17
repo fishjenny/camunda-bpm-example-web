@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    password: yld123456
+    url: jdbc:mysql://127.0.0.1:3306/demo?serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    druid:
+      validation-query: SELECT 1
+      test-while-idle: true
+      test-on-borrow: true
+      test-on-return: true
